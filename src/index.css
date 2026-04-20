@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --color-jawa-gold: #D4AF37;
+  --color-jawa-brown: #3E2723;
+  --color-jawa-deep: #1A0F0E;
+}
+
+@layer base {
+  body {
+    @apply bg-jawa-deep text-stone-200 antialiased;
+  }
+}
+
+.batik-pattern {
+  background-image: radial-gradient(circle at 2px 2px, rgba(212, 175, 55, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+}
+
+.gold-gradient {
+  @apply bg-gradient-to-br from-[#D4AF37] via-[#F9E498] to-[#B8860B];
+}
+
+.dark-gradient {
+  @apply bg-gradient-to-b from-[#1A0F0E] to-[#3E2723];
+}
