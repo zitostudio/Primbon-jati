@@ -243,9 +243,7 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      <footer className="fixed bottom-4 text-[10px] text-stone-600 uppercase tracking-[0.4em] pointer-events-none">
-        Warisan Leluhur &copy; 2026
-      </footer>
+      
     </div>
   );
 }
